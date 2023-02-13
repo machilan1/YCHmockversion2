@@ -1,0 +1,214 @@
+.landing{
+    overflow: hidden;
+    position: relative;
+    background-color: var(--brand-primary);
+    width: 100%;
+    outline: solid 2px red;
+}
+
+.landing img{
+    width: 100%;
+}
+
+.showcase{
+    display: flex;
+    justify-content: center;
+    padding: 4rem;
+    background-color: var(--brand-secondary);
+}
+.product-showroom{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    max-height: 56.25rem;
+}
+
+
+.good{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30rem;
+    position: relative;
+    height: 18.75rem;
+}
+
+.good:hover{
+    cursor: pointer;
+}
+
+.good span{
+    font-size: 1.5rem;
+    font-weight: bold;
+    position: absolute;
+    color: white;
+    transform: translateY(2em);
+    opacity: 0;
+    transition: .4s;
+
+}
+
+.good:hover span{
+    opacity: 1;
+    transform: translateY(0em);
+}
+
+.good .mask{
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    opacity: 0;
+    transition: .4s;
+}
+.good:hover .mask{
+    background-color: rgba(239, 12, 209, 0.435);
+    opacity: 1;
+    backdrop-filter: blur(10px);
+}
+.good img{
+    height: 100%;
+}
+
+.section-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: var(--page-width);
+    gap:3rem;
+}
+.section-title-area{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:15px;
+}
+.section-title{
+    font-size: 1.875rem;
+    font-weight: bold;
+}
+.section-button{
+    font-size: 1rem;
+    padding: .5rem 4rem;
+    border: solid 3px;
+    background-color: transparent;
+}
+.under-title-bar{
+    width: 4rem;
+    height: 3px;
+    border-radius: 10px;
+    background-color: var(--brand-primary);
+}
+
+main button{
+    transition: .5s;
+}
+
+.service{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: var(--brand-primary);
+    padding: 4rem 0;
+}
+.service-frame{
+    position: relative;
+    height: 37.5rem;
+    width: 18rem;
+}
+.service-showroom{
+    display: flex;
+    justify-content: center;
+}
+.service-showroom img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+.service-frame .mask{
+    top:0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+}
+
+
+
+.contact{
+    display: flex;
+    justify-content: center;
+    gap:4rem;
+    padding: 2rem;
+    background-color: var(--brand-primary);
+}
+.contact-card{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+main >:nth-child(2n) .section-title{
+    color: var(--brand-primary);    
+}
+main >:nth-child(2n) .section-button{
+    color: var(--brand-primary);    
+}
+main >:nth-child(2n) .section-button:hover{
+    color: var(--brand-secondary);   
+    border-color: var(--brand-yellow); 
+    background-color: var(--brand-yellow); 
+}
+
+
+main >:nth-child(2n) .under-title-bar{
+    background-color: var(--brand-primary);    
+}
+
+
+
+main >:nth-child(2n+1) .section-title{
+    color: var(--brand-secondary);    
+}
+main >:nth-child(2n+1) .section-button{
+    color: var(--brand-secondary);    
+}
+main >:nth-child(2n+1) .section-button:hover{
+    color: var(--brand-primary);   
+    border-color: var(--brand-secondary); 
+    background-color: var(--brand-secondary);    
+}
+main >:nth-child(2n+1) .under-title-bar{
+    background-color: var(--brand-secondary);    
+}
+
+
+
+footer{
+    height: var(--header-height);
+    background-color: var(--brand-yellow);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-content{
+    display: flex;
+    white-space: nowrap;
+    gap: 2rem;
+}
+
+.footer-content *{
+    font-size: .75rem;
+    color: var(--brand-secondary);
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+.footer-content * img{
+    width: 1rem;
+    text-align: center;
+    margin-right: .5em;
+}

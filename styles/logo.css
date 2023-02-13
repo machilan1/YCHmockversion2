@@ -1,0 +1,23 @@
+:root{
+    --logo-size :7.5rem;
+}
+
+
+.logo-shadow{
+    position: absolute;
+    height: var(--logo-size);
+    width: var(--logo-size);
+    transform: translate(10px,1px);
+}
+
+.logo-mark{
+    position: absolute;
+    height: var(--logo-size);
+    width: var(--logo-size);
+}
+.logo{
+    position: absolute;
+    top:10%;
+    left: 50%;
+    margin-left: -50px;
+}

@@ -1,0 +1,77 @@
+header{
+    z-index: 1;
+    width: 100vw;
+    position: fixed;
+    top:0;
+    background-color: var(--brand-yellow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: var(--header-height);
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.45);
+    transition: transform .4s;
+}
+
+.header-content{
+    min-width: 80rem;
+    /* background-color: aqua; */
+}
+.lang-selector{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+
+.lang-selector img{
+    width: 1.2rem;
+   
+
+}
+.navbar{
+    gap: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar a{
+    text-decoration: none;
+    white-space: nowrap;
+    color: var(--brand-secondary);
+    transition:color .4s;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.navbar a:hover{
+    cursor: pointer;
+    color: var(--brand-purple);
+}
+
+.navbar :nth-child(1){
+    color: var(--brand-purple);
+    position: relative;
+}
+
+.navbar :nth-child(1):before{
+    content:"| ";
+    position: absolute;
+    width: 1rem;
+    left:-1rem;
+    color: var(--brand-purple)
+}
+
+.navbar :nth-child(1):after{
+    content:" | ";
+    position: absolute;
+    right: -1rem;
+    color: var(--brand-purple)
+}
+
+
+
+.hidetop{
+    transform: translateY(-3.5rem);
+}

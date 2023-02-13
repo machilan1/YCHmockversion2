@@ -1,0 +1,33 @@
+@media (max-width:64rem){
+    .showcase{
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    }
+    
+    @media (max-width:80rem){
+        .logo-shadow{
+            height: 10%;
+            width: 10%;
+        }
+        
+        .logo-mark{
+            height: 10%;
+            width: 10%;
+        }
+        main{
+            margin: 0;
+        }
+        header{
+            display: none;
+        }
+     
+        .landing{
+            margin: 0;
+        }
+
+
+        .hamburger{
+            display: inline-block;
+        }
+        }
